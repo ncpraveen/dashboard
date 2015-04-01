@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="" />
+
+    <title>De dashboard </title>
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="C:/template/style.css" >
+     <![endif]-->
+    <!--[if gt IE 8]><!-->
+		{% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static '/static/style.css' %}" >
+    <!--<![endif]-->
+    <script src="/static/in.js"></script>
+    <script>
+    WebFont.load({
+      custom: {
+        families: ['FontAwesome', 'Fira+Mono'],
+      },
+      google: {
+        families: ['Roboto:400italic,700italic,300,700,400:latin'
+        ]
+      },
+      classes: false,
+      events: false,
+      timeout: 1000
+    });
+    </script>
+    <script src="/static/in1.js"></script>
+    
+  </head>
+
+  <body id="dashboard" class="">
+
+    
+<div role="banner" id="top">
+  <h1> De Dashboard </h1>
+  <div class="container">
+        
+    <div role="navigation">
+      <ul>
+        <li>
+          <a href="https://www.djangoproject.com/start/overview/">Home</a>
+        </li>
+        <li>
+          <a href="https://www.djangoproject.com/download/">Search</a>
+        </li>
+        <li>
+          <a href="https://docs.djangoproject.com/">Commits</a>
+        </li>
+        <li>
+          <a href="https://www.djangoproject.com/weblog/">Statistics</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="copy-banner">
+      <div class="container">
+        
+        </div>
+    </div>
+    <div id="billboard"></div>
+
+    <div class="container full-width">
+      <div role="main">
+        
+<div class="dashboard-index">
+  
+    
+      <h2>Activity</h2>
+    
+        
+    <div class="metric has-sparkline">
+      <h3><a href="http://code.djangoproject.com/timeline?changeset=on&amp;max=0&amp;daysback=0">Commits today</a></h3>
+      <div class="value" >
+        <a href="/board/firstview.html">2</a>
+        <div class="timestamp">&nbsp;</div>
+      </div>
+      
+      <div class="sparkline" id="spark1" data-path="https://dashboard.djangoproject.com/metric/" data-metric="commits-today"></div>
+      
+    </div>
+  
+    
+        
+    <div class="metric has-sparkline">
+      <h3><a href="http://code.djangoproject.com/timeline?changeset=on&amp;max=0&amp;daysback=7">Commits in the last week</a></h3>
+      <div class="value" >
+        <a href="https://dashboard.djangoproject.com/metric/commits-week/">71</a>
+        <div class="timestamp">&nbsp;</div>
+      </div>
+      
+      <div class="sparkline" id="spark3" data-path="https://dashboard.djangoproject.com/metric/" data-metric="commits-week"></div>
+      
+    </div>
+  
+    
+    <div class="metric has-sparkline">
+      <h3><a href="https://code.djangoproject.com/query?status=!closed&amp;severity=Release blocker&amp;desc=1&amp;order=changetime">Release blockers</a></h3>
+      <div class="value" >
+        <a href="https://dashboard.djangoproject.com/metric/blockers/">3</a>
+        <div class="timestamp">&nbsp;</div>
+      </div>
+      
+      <div class="sparkline" id="spark4" data-path="https://dashboard.djangoproject.com/metric/" data-metric="blockers"></div>
+      
+    </div>
+  
+    
+      <h2>Patches</h2>
+    
+    
+    <div class="metric has-sparkline">
+      <h3><a href="https://github.com/django/django/pulls">Open pull requests</a></h3>
+      <div class="value" >
+        <a href="https://dashboard.djangoproject.com/metric/open-pull-requests/">65</a>
+        <div class="timestamp">&nbsp;</div>
+      </div>
+      
+      <div class="sparkline" id="spark6" data-path="https://dashboard.djangoproject.com/metric/" data-metric="open-pull-requests"></div>
+      
+    </div>
+  
+    
+    <div class="metric has-sparkline">
+      <h3><a href="https://code.djangoproject.com/query?status=!closed&amp;needs_better_patch=0&amp;needs_tests=0&amp;needs_docs=0&amp;has_patch=1&amp;stage=Accepted&amp;desc=1&amp;order=changetime">Patches needing review</a></h3>
+      <div class="value" >
+        <a href="https://dashboard.djangoproject.com/metric/patches/">7</a>
+        <div class="timestamp">&nbsp;</div>
+      </div>
+      
+      <div class="sparkline" id="spark7" data-path="https://dashboard.djangoproject.com/metric/" data-metric="patches"></div>
+      
+    </div>
+  
+    
+    
+  <p class="updated">
+    Updated 25 minutes ago.
+  </p>
+</div>
+
+        <a href="#top" class="backtotop"><i class="icon icon-chevron-up"></i> Back to Top</a>
+      </div>
+
+    </div>
+
+     
+<div role="contentinfo">
+  <div class="footer">
+    <div class="container">
+      <div class="footer-logo">
+
+      </div>
+      <p class="copyright">&copy; 2015
+        Disclaimer: This web page is under development. For any feedback and suggestions please reach us @
+        <a href="nc.praveen@gmail.com">Praveen
+        </a>.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+  </body>
+</html>
